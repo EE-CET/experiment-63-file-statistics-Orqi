@@ -17,6 +17,8 @@ public class FileStats {
             // TODO: Read the file line by line until it returns null
             while ((line = reader.readLine()) != null) {
                 // TODO: Increment lineCount
+                lineCount++;
+                charCount+=line.length();
                 
                 // TODO: Add the length of the current line to charCount
                 
@@ -25,6 +27,8 @@ public class FileStats {
                 if (!line.trim().isEmpty()) {
                     String[] words = line.trim().split("\\s+");
                     // Add words.length to wordCount
+                    wordCount+=words.length;
+                    
                 }
             }
             
